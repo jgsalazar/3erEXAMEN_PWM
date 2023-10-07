@@ -1,0 +1,21 @@
+.inciso{
+    height: 30px;
+}
+
+.img01 {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.test{
+    border: 2px solid;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    background-color:powderblue;
+    font-style: italic;
+}
+
+.respuesta{
+    font-weight: bolder;
+}

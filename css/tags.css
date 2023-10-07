@@ -1,0 +1,69 @@
+body{
+    background-color:rgb(235, 243, 254);
+    font-family: 'Calibri Light';
+    color: rgb(1, 1, 114);
+}
+
+h1{
+    font-size: 300%;
+    text-align: center;
+}
+
+a{
+    border: 2px solid;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: darkblue;
+    text-decoration: none;
+    margin: 2px;
+    background-color: darkblue;
+    color: wheat;
+    text-align: center;
+}
+
+a:hover{
+    border-color: wheat;
+    background-color: wheat;
+    color: darkblue;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+}
+
+h4 img{
+    margin-right: 15px;
+}
+
+
+dd{
+    font-style: italic;
+    padding: 10px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 5px;
+    color: darkblue;
+    background-color: beige;
+    border-radius: 5px;
+    font-family: 'Calibri Light';
+}
+
+button:hover{
+    color: beige;
+    background-color: darkblue;
+}
+
+th{
+    padding: 0 5px 0 5px;
+}
+
+td{
+    text-align: center;
+}
+
+select{
+    font-family: 'Calibri Light';
+}

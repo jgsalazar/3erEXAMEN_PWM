@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tags.css">
+    <link rel="stylesheet" href="css/ids.css">
+    <link rel="stylesheet" href="css/class.css">
+    <script src="js/codigo.js" defer></script>
+</head>
+<body>
+    <div id="menu">
+        <a href="#Caracteristicas">Características</a>
+        <a href="#Roles">Roles</a>
+        <a href="#Fases">Fases</a>
+        <a href="#Historias">Historias de usuario</a>
+        <a href="#Secuencias">Diagramas de secuencia</a>
+        <a href="#Doce">Las 12 prácticas</a>
+    </div>
+
+    <div class="contenido">
+
+        <div id="titulo">
+            <h1>METODOLOGÍA XP <br>(Extreme Programming)</h1>
+            <img id="XP" src="img/metodologia-xp1.png" width="500px" alt="Error">
+        </div>
+       
+        <div class="inciso" id="Caracteristicas"></div>
+
+        <div >
+            <h2>Características</h2>
+            <p>Una metodología es un conjunto de principios, prácticas y artefactos estructurados en torno a una determinada filosofía.</p>
+            <p>Las características de la metodología XP son las siguientes:</p>
+            <ul>
+                <li>Comunicación constante entre el cliente y el equipo de desarrollo</li>
+                <li>Respuesta rápida a los cambios constantes</li>
+                <li>La planificación es un aspecto que permanece abierto, es decir, existe un cronograma flexible</li>
+                <li>El software que funciona está por encima de cualquier otra documentación</li>
+                <li>Se le da la misma importancia a los requisitos del cliente, como al trabajo en equipo y su bienestar</li>
+            </ul>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">Según las características mencionadas, ¿a qué grupo corresponde la metodología XP?</p>
+                <input type="radio" name="P1" id="P1-1"> Corriente Ágil
+                <input type="radio" name="P1" id="P1-2"> Corriente Tradicional
+                <input type="radio" name="P1" id="P1-3"> Ninguna <br>
+                <button id="P01" onclick="P01()">RESPONDER</button>
+                <p class="respuesta" id="R01"></p>
+            </div>            
+        </div>
+        
+        <div class="inciso" id="Roles"></div>
+        <div>
+            <h2>Roles</h2>
+            <p>Se refiere a la estructuración del equipo de trabajo y otros que intervengan en el proyecto, de acuerdo a sus funciones y responsabilidades.</p>
+            <p>Los roles de la metodología XP son los siguientes:</p>
+            
+            <h4><img src="img/cliente.png" width="30px" alt="Error en la imagen"> Cliente</h4>
+            <p>Es el encargado de definir los objetivos del proyecto, supervisar el desarrollo de dicho proyecto de acuerdo a sus necesidades y establecer las prioridades del mismo</p>
+    
+            <h4><img src="img/programador.png" width="30px" alt="Error en la imagen"> Programador</h4>
+            <p>Su responsabilidad es ayudar a cumplir los objetivos del proyecto, analizar las condiciones del proyecto para definir un proceso óptimo, establece tiempos aproximados de desarrollo, estimar costos y realizar un modelado del proyecto que permita ser convertido en código funcional.</p>
+    
+            <h4><img src="img/tester.png" width="30px" alt="Error en la imagen"> Tester</h4>
+            <p>Su responsabilidad es realizar pruebas al código desarrollado en busca de posibles errores. En base a su experiencia, debe ser capaz de observar posibles puntos críticos que pudieran causar pérdida de información o resultados incorrectos</p>
+    
+            <h4><img src="img/jefe.png" width="30px" alt="Error en la imagen"> Jefe de equipo</h4>
+            <p>Su responsabilidad es la de organizar, asesorar y orientar al equipo de desarrollo y al cliente. También debe realizar un seguimiento del cumplimiento de los tiempos establecidos y de los posibles cambios que surjan por parte del cliente.</p>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">Marque el rol responsable de las siguientes funciones del equipo de desarrollo</p>
+                <table>
+                    <tr>
+                        <th>Función</th>
+                        <th>Cliente</th>
+                        <th>Programador</th>
+                        <th>Tester</th>
+                        <th>Jefe de equipo</th>
+                    </tr>
+
+                    <tr>
+                        <td>Busca posibles errores en el código</td>
+                        <td><input type="radio" name="P2-1" id="O1-1"></td>
+                        <td><input type="radio" name="P2-1" id="O1-2"></td>
+                        <td><input type="radio" name="P2-1" id="O1-3"></td>
+                        <td><input type="radio" name="P2-1" id="O1-4"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Estima el tiempo de desarrollo</td>
+                        <td><input type="radio" name="P2-2" id="O2-1"></td>
+                        <td><input type="radio" name="P2-2" id="O2-2"></td>
+                        <td><input type="radio" name="P2-2" id="O2-3"></td>
+                        <td><input type="radio" name="P2-2" id="O2-4"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Orienta al equipo de desarrollo y al cliente</td>
+                        <td><input type="radio" name="P2-3" id="O3-1"></td>
+                        <td><input type="radio" name="P2-3" id="O3-2"></td>
+                        <td><input type="radio" name="P2-3" id="O3-3"></td>
+                        <td><input type="radio" name="P2-3" id="O3-4"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Realiza el modelado del proyecto</td>
+                        <td><input type="radio" name="P2-4" id="O4-1"></td>
+                        <td><input type="radio" name="P2-4" id="O4-2"></td>
+                        <td><input type="radio" name="P2-4" id="O4-3"></td>
+                        <td><input type="radio" name="P2-4" id="O4-4"></td>
+                    </tr>
+                    
+                </table>
+                <button id="P02" onclick="P02()">RESPONDER</button>
+                <p class="respuesta" id="R02"></p>
+            </div>  
+        </div>
+        
+        <div class="inciso" id="Fases"></div>
+        <div>
+            <h2>Fases</h2>
+            <p>Las metodologías ágiles, por su carácter adaptativo y que permite un flujo constante de modificaciones, tiene un desarrollo iterativo, es decir, que sus avance se realizan tomando en cuenta avances funcionales.</p>
+            <p>Las fases que comprende la metodología XP son las siguientes:</p>
+    
+            <h4><img src="img/planificacion.png" width="30px" alt="Error en la imagen"> Planificación</h4>
+            <p>En esta etapa se realizarán las tareas de análisis de los requerimientos mediante una herramienta propia de XP, como son las Historias de Usuario. Se establecerán los módulos en los cuales se dividirá el proyecto y las prioridades que tendrán cada uno de ellos.</p>
+            <p>También se desarrollará un cronograma provisional que establezca tiempos estimados para el desarrollo de cada módulo.</p>
+    
+            <h4><img src="img/diseno.png" width="30px" alt="Error en la imagen"> Diseño</h4>
+            <p>En esta etapa se realizarán las tareas de modelado, bocetado y creación de módulos básicos que sirvan de guías para posteriores iteraciones.</p>
+    
+            <h4><img src="img/codificacion.png" width="30px" alt="Error en la imagen"> Codificación</h4>
+            <p>En esta etapa se realizarán las tareas de creación del código funcional, utilizando una característica propias, como es la Programación en Parejas.</p>
+            <p>Tomando en cuenta el paradigma orientado a objetos, se desarrollará otro elemento propio de la metodología llamado Tarjetas CRC (Clase-Responsabilidad-Colaboración)</p>
+    
+            <h4><img src="img/pruebas.png" width="30px" alt="Error en la imagen"> Pruebas</h4>
+            <p>Las pruebas se realizan a la par de la codificación, ya que por el principio de la Programación en Parejas se alternan los roles de los programadores. Adicionalmente, el propio cliente puede realizar pruebas o proponer ciertos test al código en desarrollo</p>
+    
+            <h4><img src="img/lanzamiento.png" width="30px" alt="Error en la imagen"> Lanzamiento</h4>
+            <p>Una vez que se tiene un avance funcional que ha pasado las revisiones y cumple con lo establecido en la Historia de Usuario correspondiente, se realiza el proceso de liberación e incorporación en el producto estable</p>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">Selecciona en el orden correcto las fases de la metodología XP</p>
+                <table>
+                    <tr>
+                        <td> 1.<select id="etapa01" onclick="change01()">
+                            <option value="selecciona">Selecciona una fase</option>
+                            <option value="codificacion">Codificación</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="lanzamiento">Lanzamiento</option>
+                            <option value="planificacion">Planificación</option>
+                            <option value="pruebas">Pruebas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img id="img01P3" src="img/question.png" width="30px" alt="Error en la imagen">
+                        </td>
+                        <td rowspan="7">
+                            <img src="img/flecha_ciclo.PNG" height="300px" alt="Error en la imagen">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <img src="img/flecha_abajo.png" width="30px" alt="Error en la imagen">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> 2.<select id="etapa02" onclick="change02()">
+                            <option value="selecciona">Selecciona una fase</option>
+                            <option value="codificacion">Codificación</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="lanzamiento">Lanzamiento</option>
+                            <option value="planificacion">Planificación</option>
+                            <option value="pruebas">Pruebas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="img/question.PNG" width="30px" alt="Error en la imagen" id="img02P3">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <img src="img/flecha_abajo.png" width="30px" alt="Error en la imagen">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> 3.<select id="etapa03" onclick="change03()">
+                            <option value="selecciona">Selecciona una fase</option>
+                            <option value="codificacion">Codificación</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="lanzamiento">Lanzamiento</option>
+                            <option value="planificacion">Planificación</option>
+                            <option value="pruebas">Pruebas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="img/question.PNG" width="30px" alt="Error en la imagen" id="img03P3">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <img src="img/flecha_abajo.png" width="30px" alt="Error en la imagen">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> 4.<select id="etapa04" onclick="change04()">
+                            <option value="selecciona">Selecciona una fase</option>
+                            <option value="codificacion">Codificación</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="lanzamiento">Lanzamiento</option>
+                            <option value="planificacion">Planificación</option>
+                            <option value="pruebas">Pruebas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="img/question.PNG" width="30px" alt="Error en la imagen" id="img04P3">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <img src="img/flecha_abajo.png" width="30px" alt="Error en la imagen">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> 5.<select id="etapa05" onclick="change05()">
+                            <option value="selecciona">Selecciona una fase</option>
+                            <option value="codificacion">Codificación</option>
+                            <option value="diseno">Diseño</option>
+                            <option value="lanzamiento">Lanzamiento</option>
+                            <option value="planificacion">Planificación</option>
+                            <option value="pruebas">Pruebas</option>
+                            </select>
+                        </td>
+                        <td>
+                            <img src="img/question.PNG" width="30px" alt="Error en la imagen" id="img05P3">
+                        </td>
+                    </tr>
+                </table>
+
+                <button id="P03" onclick="P03()">RESPONDER</button>
+                <p class="respuesta" id="R03"></p>
+            </div> 
+        </div>
+        
+        <div class="inciso" id="Historias"></div>
+        <div>
+            <h2>Historias de Usuario</h2>
+            <p>Las "historias de usuario" son una técnica utilizada para definir y describir los requisitos funcionales de un proyecto de software desde la perspectiva del usuario final o del cliente. Las historias de usuario son breves descripciones de funcionalidades o características que el sistema debe ofrecer, expresadas en un lenguaje claro y accesible para todos los miembros del equipo, incluyendo desarrolladores, diseñadores y cliente.</p>
+            <p>Las historias de usuario se centran en lo que un usuario necesita lograr o en los problemas que necesita resolver utilizando el software.</p>
+            <p>Cada historia se estructura generalmente de la siguiente manera:</p>
+            <img src="img/Historia.JPG" width="300px" alt="Error en la imagen" class="img01"> <br>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">Según lo visto hasta el momento, ¿en qué etapa se deben elaborar las Historias de Usuario? Haga clic en la etapa correcta.</p>
+                <button id="P04" onclick="P04(1)">PLANIFICACIÓN</button>
+                <button id="P04" onclick="P04(0)">DISEÑO</button>
+                <button id="P04" onclick="P04(0)">CODIFICACIÓN</button>
+                <button id="P04" onclick="P04(0)">PRUEBAS</button>
+                <button id="P04" onclick="P04(0)">LANZAMIENTO</button>
+                <p class="respuesta" id="R04"></p>
+            </div> 
+    
+        </div>
+        
+        <div class="inciso" id="Secuencias"></div>
+        <div>
+            <h2>Diagramas de Secuencia</h2>
+            <p>Estos diagramas permiten diseñar los estados de los objetos de nuestro sismte, y nos muestra la forma en la que los objetos se comunican a través del tiempo.</p>
+            <p>Estos diagramas constan de los siguientes elementos:</p>
+            <dl>
+                <dd>Objetos</dd>
+                <dt>Son los elementos que representan las entidades dentro de nuestro sistema.</dt>
+                <dd>Mensajes</dd>
+                <dt>Los objetos envían mensajes entre sí, es decir, envían datos desde una entidad a otra. Y son representados de la siguiente forma:</dt>
+                <img src="img/secuencias mensaje.JPG" width="200px" alt="Error en la imagen" class="img01">
+                <dd>Tiempo</dd>
+                <dt>La comunicación entre los objetos se realiza en un lapso de tiempo, que comienza cuando se envía el primer mensaje y culmina cuando se recibe el último mensaje.</dt>
+            </dl>
+            <p>Un esquema del diagrama de secuencia se muestra a continuación:</p>
+            <img src="img/diagrama secuencia.png" width="300px" alt="Error en la imagen" class="img01"><br>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">¿Cuál(es) de los siguientes tipos de mensaje NO se incluye(n) en los Diagramas de Secuencia?</p>
+                <input type="checkbox" name="P5" id="P5-1"> Simple
+                <input type="checkbox" name="P5" id="P5-2"> Doble
+                <input type="checkbox" name="P5" id="P5-3"> Sincrónico
+                <input type="checkbox" name="P5" id="P5-4"> Asíncrono
+                <input type="checkbox" name="P5" id="P5-5"> de Espera <br>
+                <button id="P05" onclick="P05()">RESPONDER</button>
+                <p class="respuesta" id="R05"></p>
+            </div>
+    
+        </div>
+        
+        <div class="inciso" id="Doce"></div>
+        <div>
+            <h2>Las 12 prácticas</h2>
+            <ol>
+                <h4><li>El juego de la planificación</li> </h4>
+            
+                <p>Para planificar un proyecto se debe tomar en cuenta dos aspectos principales: las prioridades del negocio y la estimación técnica</p>
+                <p>Es responsabilidad de los desarrolladores dividir las historias en conjutnos de tareas y estimar su duración. La estimación del tiempo es una responsabilidad directa del desarrollador, no del cliente</p>
+    
+                <h4><li>Entregas pequeñas</li></h4>
+                    <p>Se debe poner en marcha un sistema simple de forma rápida y agregar nuevas versiones en ciclos cortos. Cada entrega nos dará una mejor perspectiva del proyecto final.</p>
+    
+                <h4><li>Metáfora</li></h4>
+                    <p>Una simple historia de cómo funciona el sistema permitirá entender de mejor manera los objetivos del proyecto. Para esta historia corta se recomienda utilizar un lenguaje sencillo que pueda ser entendido tanto por el cliente como por el desarrollador</p>
+    
+                <h4><li>Diseño simple</li></h4>
+                    <p>Se debe procurar mantener el diseño tan simple como sea posible. Realizar pruebas unitarias para verificar las característica, evitar la duplicación del código, explicación senciall de los fragmentos de código, procurar definir las clases y métodos más importantes del proyecto</p> 
+    
+                <h4><li>Pruebas</li></h4>
+                    <p>Se deben escribir constantemente pruebas (test unitarios) para el código, todos los test deben estar verificados antes de integrarlos al proyecto general.</p>
+    
+                <h4><li>Refactorización</li></h4>
+                    <p>Refactorizar es reestructurar el sistema sin modificar su comportamiento para hacerlo más simple, quitar redundancias, quitar capas innecesarias de código.</p>
+    
+                <h4><li>Programación en parejas</li></h4>
+                    <p>El proceso de programación es dinámico, es decir, que permite intercalar roles entre los programadores. En el caso de que surja un inconveniente al momento de programar, uno de los programadores puede solicitar asistencia de su pareja para solucionar el bloqueo. Cuando se culmina una etapa de programación, ambos programadores revisarán el códifo de su compañero.</p>
+    
+                <h4><li>Responsabilidad colectiva</li></h4>
+                    <p>El equipo en su conjunto es responsable del proyecto, eso significa que todos los integrantes deben saber el estado del proyecto en caso de que surja un cambio repentino. </p>
+                    <p>Se debe comprender que cuando se realice un cambio en el proyecto, ese cambio puede afectar a otros módulos del mismo, por lo cual deben ser realizados con responsabilidad.</p>
+    
+                <h4><li>Integración continua</li></h4>
+                    <p>Se debe integrar y reconstruir el sistema cada vez que se termine una tarea, posiblemente surjan muchos cambios en un mismo día, así que se deberá hacer esta tarea en cada una de ellas</p>
+    
+                <h4><li>40 horas a la semana</li></h4>
+                    <p>Se debe tener este límite de horas trabajadas, evitando sobreexigir al equipo. En caso de que sea necesario trabajar horas extra, se debe evitar repetir esta situación más de dos semanas seguidas.</p>
+    
+                <h4><li>Cliente in situ</li></h4>
+                    <p>El cliente es parte del equipo, ya que provee ayuda en aspectos de la comprension de las historias de usuario, prioridades y otros. El cliente tiene la capacidad de brindarnos una retroalimentación inmediata acerca de los avances, lo cual incrementa la confianza del equipo.</p>
+    
+                <h4><li>Estándares de código</li>
+                </h4>
+                    <p>La comunicación es muy importante, el equipo debe establecer reglas acerda de aspectos relacionados con el código desarrollado, por ejemplo: nombres de variables, estilo de los comentarios, nombres de funciones, patrones de diseño, entre otros.</p>
+            </ol>
+
+            <div class="test">
+                <p>Refuerza tus conocimientos:</p>
+                <p class="pregunta">¿Cuál(es) de las siguientes prácticas NO corresponde(n) a la metodología XP?</p>
+                <input type="checkbox" name="P6" id="P6-1"> El cliente debe definir el tiempo de desarrollo del proyecto. <br>
+                <input type="checkbox" name="P6" id="P6-2"> Se procura entregar de manera rápida una primera versión simple del programa. <br>
+                <input type="checkbox" name="P6" id="P6-3"> Se prefiere mantener el diseño tan simple como sea posible. <br>
+                <input type="checkbox" name="P6" id="P6-4"> Las pruebas deben realizarse sólo cuando el producto esté terminado. <br>
+                <input type="checkbox" name="P6" id="P6-5"> La programación en parejas sirve para que ambos programadores trabajen en una misma sección de código y comparen sus resultados. <br>
+                <input type="checkbox" name="P6" id="P6-6"> Todo el equipo es responsable del proyecto y cada integrante debe conocer el estado del mismo. <br>
+                <input type="checkbox" name="P6" id="P6-7"> Se debe integrar y reconstruir el sistema cada vez que se termine una tarea.  <br>
+                <input type="checkbox" name="P6" id="P6-8"> Es recomendable trabajar un máximo de 8 horas por día de lunes a sábado.  <br>
+                <input type="checkbox" name="P6" id="P6-9"> El cliente ya no puede intervenir una vez que se haya comenzado el proyecto. <br>
+                <input type="checkbox" name="P6" id="P6-10"> Se promueve el uso de estándares de código. <br>
+                <button id="P06" onclick="P06()">RESPONDER</button>
+                <p class="respuesta" id="R06"></p>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <p id="creditos">
+        Autor: <em>Juan Gabriel Salazar Romero</em>
+    </p>
+
+</body>
+</html>

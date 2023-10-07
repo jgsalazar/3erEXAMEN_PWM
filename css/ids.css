@@ -1,0 +1,31 @@
+#XP {
+    display: block;
+    margin: 0 auto;
+}
+
+#menu{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:  rgb(235, 243, 254);
+}
+
+#caracteristicas{
+    margin-top: 50px
+}
+
+#doce{
+    margin-top: 50px;
+}
+
+#creditos{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color: powderblue;
+}
+
+
+
